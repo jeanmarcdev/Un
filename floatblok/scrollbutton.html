@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<!-- <div style="background-color:black;color:white;padding:30px">
+  Scroll Down
+</div>
+<div style="background-color:lightgrey;padding:30px 30px 2500px">
+  This example demonstrates how to create a "scroll to top" button that becomes visible
+  <strong>when the user starts to scroll the page</strong>.
+</div> -->
+<div class="scrollmenu">
+    <a href="#first_section">Première section</a>
+    <a href="#second_section">Deuxième section</a>
+    <a href="#third_section">Troisième section</a>
+</div>
+<section id="first_section">
+
+<div class="container">
+    <h1>S'exercer à l'HTML</h1>
+    <div class="wrapper">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut hendrerit urna. Proin finibus mi sed mattis sollicitudin. Phasellus sagittis metus non congue volutpat. Sed sodales tortor nec nisl euismod fringilla. Aliquam quis enim sit amet dolor dapibus vehicula. Vestibulum vehicula, nibh ac cursus sagittis, massa enim sagittis lorem, volutpat volutpat dolor sem sed enim. Fusce eu lacus urna. Phasellus vel porta enim. Donec ut urna quis augue lacinia cursus vitae quis neque. Quisque lacinia euismod est ullamcorper volutpat. Vivamus bibendum et enim ac lobortis. Duis in pellentesque orci. In non dui sit amet purus egestas vestibulum.
+          </p>
+          <p>
+            Integer diam metus, molestie quis felis tristique, vulputate consequat arcu. Nunc erat nunc, facilisis sit amet dolor vitae, tempus blandit mi. Cras non nunc et est placerat faucibus at a arcu. Duis nulla nibh, dapibus vel purus a, congue finibus libero. Proin lacinia aliquet ipsum at ornare. Donec tempor, nisl imperdiet iaculis pellentesque, quam sapien suscipit turpis, facilisis condimentum mi nibh eget velit. Quisque dolor mauris, facilisis nec nisi nec, lacinia fringilla tellus.
+          </p>
+    </div>
+</div>
+</section>
+
+<section id="second_section">
+<div class="container">
+    <h2>Ma deuxième section</h2>
+    <div class="wrapper">
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut hendrerit urna. Proin finibus mi sed mattis sollicitudin. Phasellus sagittis metus non congue volutpat. Sed sodales tortor nec nisl euismod fringilla. Aliquam quis enim sit amet dolor dapibus vehicula. Vestibulum vehicula, nibh ac cursus sagittis, massa enim sagittis lorem, volutpat volutpat dolor sem sed enim. Fusce eu lacus urna. Phasellus vel porta enim. Donec ut urna quis augue lacinia cursus vitae quis neque. Quisque lacinia euismod est ullamcorper volutpat. Vivamus bibendum et enim ac lobortis. Duis in pellentesque orci. In non dui sit amet purus egestas vestibulum.
+        </p>
+
+        <p>
+          Integer diam metus, molestie quis felis tristique, vulputate consequat arcu. Nunc erat nunc, facilisis sit amet dolor vitae, tempus blandit mi. Cras non nunc et est placerat faucibus at a arcu. Duis nulla nibh, dapibus vel purus a, congue finibus libero. Proin lacinia aliquet ipsum at ornare. Donec tempor, nisl imperdiet iaculis pellentesque, quam sapien suscipit turpis, facilisis condimentum mi nibh eget velit. Quisque dolor mauris, facilisis nec nisi nec, lacinia fringilla tellus.
+        </p>
+
+        <p>
+            Vestibulum vitae dolor ac turpis hendrerit dignissim at id sem. Vestibulum at semper lectus, at porta ex. Ut nec suscipit lacus. Proin quis ex tellus. Donec et nibh in purus egestas porttitor. Ut a lacus vitae massa egestas tempor. Quisque feugiat magna sapien, at feugiat neque finibus vitae. Aenean tincidunt rhoncus arcu a ullamcorper. Vivamus nec facilisis lacus. In eros metus, porta nec ornare non, iaculis id nulla.
+        </p>
+
+  </div>
+</div>
+</section>
+
+<section id="third_section">
+<div class="container">
+    <h2>Ma troisième section</h2>
+    <!-- 5eme demande :
+    Dans ma section avec l'image, j'aimerais que l'image se place à gauche
+     et que le texte soit à droite au même niveau que l'image.
+     align="left" marche dans la balise <img> -->
+
+    <img src="asset/img/mon-img.jpg" alt="mon image">
+    <div class="wrapper">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut hendrerit urna. Proin finibus mi sed mattis sollicitudin. Phasellus sagittis metus non congue volutpat. Sed sodales tortor nec nisl euismod fringilla. Aliquam quis enim sit amet dolor dapibus vehicula. Vestibulum vehicula, nibh ac cursus sagittis, massa enim sagittis lorem, volutpat volutpat dolor sem sed enim. Fusce eu lacus urna. Phasellus vel porta enim. Donec ut urna quis augue lacinia cursus vitae quis neque. Quisque lacinia euismod est ullamcorper volutpat. Vivamus bibendum et enim ac lobortis. Duis in pellentesque orci. In non dui sit amet purus egestas vestibulum.
+          </p>
+          <!-- <div class="scrollmenu">
+            <a href="#first_section">Première section</a>
+          </div> -->
+    </div>
+</div>
+</section>
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+<!-- Pour avoir les liens ci-dessus aller dans les deux liens:
+J'aimerais mettre deux polices d'écritures plus sympa.
+Pour les paragraphes : https://fonts.google.com/specimen/Montserrat
+Pour les titres: https://fonts.google.com/specimen/Pacifico
+et faire plus pour copier pour le css et pour le html.
+exple: https://www.youtube.com/watch?v=3z_-mD00yc4 -->
+    <meta charset="utf-8">
+    <!-- The w3-container class adds a 16px left and right padding to any HTML element.
+    The w3-container class is the perfect class to use for all HTML container elements like:
+<div>, <article>, <section>, <header>, <footer>, <form>, and more. -->
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   et ajouter cette class dans la balise concernée:class="w3-container w3-red"-->
+   <!-- Pour Styler aussi cela marche. Je remplace la couleur "red" par "teal"
+  -->
+    <title>Exo pour l'HTML</title>
+    <link rel="stylesheet" href="asset/css/app.css" type="text/css">
+    <script src="asset/js/scroll.js" type="text/javascript" ></script>
+  </head>
+  <body>
+  <!-- Mon boutton scroll -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Haut de page</button>
+      <div class="scrollmenu">
+          <a href="#first_section">Première section</a>
+          <a href="#second_section">Deuxième section</a>
+          <a href="#third_section">Troisième section</a>
+      </div>
+    <section id="first_section">
+
+      <div class="container">
+          <h1>S'exercer à l'HTML</h1>
+          <div class="wrapper">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut hendrerit urna. Proin finibus mi sed mattis sollicitudin. Phasellus sagittis metus non congue volutpat. Sed sodales tortor nec nisl euismod fringilla. Aliquam quis enim sit amet dolor dapibus vehicula. Vestibulum vehicula, nibh ac cursus sagittis, massa enim sagittis lorem, volutpat volutpat dolor sem sed enim. Fusce eu lacus urna. Phasellus vel porta enim. Donec ut urna quis augue lacinia cursus vitae quis neque. Quisque lacinia euismod est ullamcorper volutpat. Vivamus bibendum et enim ac lobortis. Duis in pellentesque orci. In non dui sit amet purus egestas vestibulum.
+                </p>
+                <p>
+                  Integer diam metus, molestie quis felis tristique, vulputate consequat arcu. Nunc erat nunc, facilisis sit amet dolor vitae, tempus blandit mi. Cras non nunc et est placerat faucibus at a arcu. Duis nulla nibh, dapibus vel purus a, congue finibus libero. Proin lacinia aliquet ipsum at ornare. Donec tempor, nisl imperdiet iaculis pellentesque, quam sapien suscipit turpis, facilisis condimentum mi nibh eget velit. Quisque dolor mauris, facilisis nec nisi nec, lacinia fringilla tellus.
+                </p>
+          </div>
+      </div>
+    </section>
+
+    <section id="second_section">
+      <div class="container">
+          <h2>Ma deuxième section</h2>
+          <div class="wrapper">
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut hendrerit urna. Proin finibus mi sed mattis sollicitudin. Phasellus sagittis metus non congue volutpat. Sed sodales tortor nec nisl euismod fringilla. Aliquam quis enim sit amet dolor dapibus vehicula. Vestibulum vehicula, nibh ac cursus sagittis, massa enim sagittis lorem, volutpat volutpat dolor sem sed enim. Fusce eu lacus urna. Phasellus vel porta enim. Donec ut urna quis augue lacinia cursus vitae quis neque. Quisque lacinia euismod est ullamcorper volutpat. Vivamus bibendum et enim ac lobortis. Duis in pellentesque orci. In non dui sit amet purus egestas vestibulum.
+              </p>
+
+              <p>
+                Integer diam metus, molestie quis felis tristique, vulputate consequat arcu. Nunc erat nunc, facilisis sit amet dolor vitae, tempus blandit mi. Cras non nunc et est placerat faucibus at a arcu. Duis nulla nibh, dapibus vel purus a, congue finibus libero. Proin lacinia aliquet ipsum at ornare. Donec tempor, nisl imperdiet iaculis pellentesque, quam sapien suscipit turpis, facilisis condimentum mi nibh eget velit. Quisque dolor mauris, facilisis nec nisi nec, lacinia fringilla tellus.
+              </p>
+
+              <p>
+                  Vestibulum vitae dolor ac turpis hendrerit dignissim at id sem. Vestibulum at semper lectus, at porta ex. Ut nec suscipit lacus. Proin quis ex tellus. Donec et nibh in purus egestas porttitor. Ut a lacus vitae massa egestas tempor. Quisque feugiat magna sapien, at feugiat neque finibus vitae. Aenean tincidunt rhoncus arcu a ullamcorper. Vivamus nec facilisis lacus. In eros metus, porta nec ornare non, iaculis id nulla.
+              </p>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="third_section">
+      <div class="container">
+          <h2>Ma troisième section</h2>
+          <!-- 5eme demande :
+          Dans ma section avec l'image, j'aimerais que l'image se place à gauche
+           et que le texte soit à droite au même niveau que l'image.
+           align="left" marche dans la balise <img> -->
+
+          <img src="asset/img/mon-img.jpg" alt="mon image">
+          <div class="wrapper">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut hendrerit urna. Proin finibus mi sed mattis sollicitudin. Phasellus sagittis metus non congue volutpat. Sed sodales tortor nec nisl euismod fringilla. Aliquam quis enim sit amet dolor dapibus vehicula. Vestibulum vehicula, nibh ac cursus sagittis, massa enim sagittis lorem, volutpat volutpat dolor sem sed enim. Fusce eu lacus urna. Phasellus vel porta enim. Donec ut urna quis augue lacinia cursus vitae quis neque. Quisque lacinia euismod est ullamcorper volutpat. Vivamus bibendum et enim ac lobortis. Duis in pellentesque orci. In non dui sit amet purus egestas vestibulum.
+                </p>
+          </div>
+                        <!-- Deuxième image -->
+          <img src="asset/img/mon-img.jpg" alt="mon image">
+          <div class="wrapper">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut hendrerit urna. Proin finibus mi sed mattis sollicitudin. Phasellus sagittis metus non congue volutpat. Sed sodales tortor nec nisl euismod fringilla. Aliquam quis enim sit amet dolor dapibus vehicula. Vestibulum vehicula, nibh ac cursus sagittis, massa enim sagittis lorem, volutpat volutpat dolor sem sed enim. Fusce eu lacus urna. Phasellus vel porta enim. Donec ut urna quis augue lacinia cursus vitae quis neque. Quisque lacinia euismod est ullamcorper volutpat. Vivamus bibendum et enim ac lobortis. Duis in pellentesque orci. In non dui sit amet purus egestas vestibulum.
+                </p>
+          </div>
+      </div>
+    </section>
+
+    <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+// Postion fixe de la section 3
+// var  mn = $(".moi");
+// mns = "remaining-scrolled";
+// hdr = $("#footer").height();
+//
+// $(window).scroll(function() {
+//    if( $(this).scrollTop() > hdr ) {
+//       mn.addClass(mns);
+//    } else {
+//       mn.removeClass(mns);
+//    }
+// });
+
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,168 @@
+
+
+/************** globale ****************/
+/* cliquer sur le "+" pour aller personnaliser
+Mais dans notre cas, c'était dèjà personnaliser
+Donc j'ai juste cliquer sur plus pour copier les fonts pour
+css et html
+Pour avoir les liens ci-dessus aller dans les deux liens:
+J'aimerais mettre deux polices d'écritures plus sympa.
+Pour les paragraphes : https://fonts.google.com/specimen/Montserrat
+Pour les titres: https://fonts.google.com/specimen/Pacifico
+et faire plus pour copier pour le css et pour le html.
+exple: https://www.youtube.com/watch?v=3z_-mD00yc4
+
+ */
+body{
+  background-color: #100028;
+  /* padding:30px 30px 2500px; */
+}
+.container{
+  /* Cette largeur est obligatoire */
+  width: 1080px;
+  margin: auto;
+    /* overflow: auto; ne change rien*/
+
+}
+h1{
+  font-size: 75px;
+  text-align: center;
+  color: #7e57c2;
+  font-family: 'Pacifico', cursive;
+}
+h2 {
+  font-family: 'Pacifico', cursive;
+}
+p{
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+}
+/* 4eme demande :
+J'aimerais que ma deuxième section, celle qui a le titre ma deuxième section
+ ait un fond de couleur : blanc et que les textes soit écrit avec
+ cette valeur #100028 et que le titre de la section soit de
+ celle-ci : #7e57c2
+ */
+ #second_section {
+  background-color: #FFF;
+}
+#second_section h2 {
+  color: #7e57c2;
+}
+
+#second_section p {
+  color: #100028;
+}
+
+.container img:first-of-type {
+  float: left;
+  /* width:170px; */
+  height:100px;
+  margin:8px;
+}
+
+.container img:last-of-type {
+  float: right;
+  /* width:170px; */
+  /* Pour floter il une
+  longueur ou une largeur à laquelle on doit
+  floter */
+  height:100px;
+  margin:8px;
+}
+
+/* Pour voir la troisième section */
+#third_section h2{
+  color: white;
+}
+/* Position fixée */
+#third_section {
+  bottom: 0;
+  width: 100%;
+  position: sticky;
+   /* overflow: hidden; */
+   opacity: 1;
+background-color: rgba(16,0,40, 1);
+}
+/* 6eme demande :
+J'aimerais que le premier paragraphe de la section qui à l'ID first_section
+ soit en caractère 20px  et un interlignage de 30px.
+Il faudrait également que ce premier paragraphe ait un margin-top de 50px
+et une margin-bottom de 20px
+ */
+ #first_section p:first-child {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* 7eme demande :
+J'aimerais que les 3 paragraphes de ma deuxième section soient positionnés en 3 colonnes
+ et que les contenus soient centrés horizontalement. Il faut donc que chaque paragraphe
+ fasse 1/3 de la largeur.
+ */
+ #second_section .wrapper
+ {
+   display:flex;
+   }
+  #second_section .wrapper > *
+ {
+   /* margin:auto;
+   width: 33.33%;
+   padding: 50px; */
+padding: 10px;
+   flex: 1 1 0;
+   /* width: min-content; */
+ }
+
+
+ div.scrollmenu {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+ }
+
+ div.scrollmenu a {
+   /* float: left; */
+   color: black;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+ }
+
+ div.scrollmenu a:hover {
+   /* background-color: #ddd; */
+   /* color: black; */
+   background-color: #7e57c2;
+   color:white;
+ }
+/* div.scrollmenu a {
+  width: 350px;
+  margin: auto;
+} */
+ /* div.scrollmenu a.active {
+   background-color: #4CAF50;
+   color: white;
+ } */
+ /* Mon boutton scroll en js */
+ #myBtn {
+   display: none;
+   position: fixed;
+   bottom: 20px;
+   right: 30px;
+   z-index: 99;
+   font-size: 18px;
+   border: none;
+   outline: none;
+   background-color: #ece7d6;
+   color: black;
+   cursor: pointer;
+   padding: 15px;
+   border-radius: 4px;
+ }
+
+ #myBtn:hover {
+   background-color: #555;
+ }
